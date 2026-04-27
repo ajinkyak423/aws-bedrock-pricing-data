@@ -1,0 +1,1955 @@
+[
+    {
+        "Hierarchy_Path": "Anthropic",
+        "Model Name": "Claude 3.5 Sonnet v2  (Public Extended Access, Effective 1 Dec 2025)",
+        "Price per 1M input tokens": "$6.00",
+        "Price per 1M input tokens (batch)": "$3.00",
+        "Price per 1M input tokens (cache read)": "$0.60",
+        "Price per 1M input tokens (cache write)": "$7.50",
+        "Price per 1M output tokens": "$30.00",
+        "Price per 1M output tokens (batch)": "$15.00",
+        "Pricing_Category": "Anthropic",
+        "Provider": "Anthropic",
+        "Region": "global",
+        "Regions": "US East (N. Virginia), US East (Ohio), US West (Oregon)"
+    },
+    {
+        "Hierarchy_Path": "Anthropic",
+        "Model Name": "Claude 3.5 Sonnet (Public Extended Access, Effective 1 Dec 2025)",
+        "Price per 1M input tokens": "$6.00",
+        "Price per 1M input tokens (batch)": "$3.00",
+        "Price per 1M input tokens (cache read)": "N/A",
+        "Price per 1M input tokens (cache write)": "N/A",
+        "Price per 1M output tokens": "$30.00",
+        "Price per 1M output tokens (batch)": "$15.00",
+        "Pricing_Category": "Anthropic",
+        "Provider": "Anthropic",
+        "Region": "global",
+        "Regions": "US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Frankfurt), Europe (Ireland), Europe (Zurich), Europe (Paris)"
+    },
+    {
+        "Cohere models": "Cohere Command",
+        "Hierarchy_Path": "Cohere",
+        "Price per hour per model unit for 1-month commitment": "$39.60",
+        "Price per hour per model unit for 6-month commitment": "$23.77",
+        "Price per hour per model with no commitment": "$49.50",
+        "Pricing_Category": "Cohere",
+        "Provider": "Cohere",
+        "Region": "global"
+    },
+    {
+        "Cohere models": "Rerank 3.5",
+        "Hierarchy_Path": "Cohere",
+        "Price per 1,000 queries**": "$2.00",
+        "Pricing_Category": "Cohere",
+        "Provider": "Cohere",
+        "Region": "global"
+    },
+    {
+        "Cohere models": "Embed 3 Multilingual",
+        "Hierarchy_Path": "Cohere",
+        "Price per hour per model unit for 1-month commitment": "$6.76",
+        "Price per hour per model unit for 6-month commitment": "$6.41",
+        "Price per hour per model with no commitment": "$7.12",
+        "Pricing_Category": "Cohere",
+        "Provider": "Cohere",
+        "Region": "global"
+    },
+    {
+        "Cohere models": "Cohere Command - Light",
+        "Hierarchy_Path": "Cohere",
+        "Price per hour per model unit for 1-month commitment": "$6.85",
+        "Price per hour per model unit for 6-month commitment": "$4.11",
+        "Price per hour per model with no commitment": "$8.56",
+        "Pricing_Category": "Cohere",
+        "Provider": "Cohere",
+        "Region": "global"
+    },
+    {
+        "Cohere models": "Embed 3 English",
+        "Hierarchy_Path": "Cohere",
+        "Price per hour per model unit for 1-month commitment": "$6.76",
+        "Price per hour per model unit for 6-month commitment": "$6.41",
+        "Price per hour per model with no commitment": "$7.12",
+        "Pricing_Category": "Cohere",
+        "Provider": "Cohere",
+        "Region": "global"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Mistral",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Mistral",
+        "v1.0": "$0.05718"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Flan",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Flan",
+        "v1.0": "$0.07144"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Llama",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Llama",
+        "v1.0": "$0.05718"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > OpenAI",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "OpenAI",
+        "v2.0": "$0.1433"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Flan",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Flan",
+        "v1.0": "$0.05718"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > OpenAI",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "OpenAI",
+        "v2.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Qwen",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen",
+        "v1.0": "$0.07144"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > Mistral",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Mistral",
+        "v1.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > Flan",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Flan",
+        "v1.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > Llama",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Llama",
+        "v1.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Qwen",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen",
+        "v1.0": "$0.05718"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > Qwen",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen",
+        "v1.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Mixtral",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Mixtral",
+        "v1.0": "$0.07144"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Mixtral",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Mixtral",
+        "v1.0": "$0.05718"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Multimodal Llama",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Multimodal Llama",
+        "v1.0": "$0.07144"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Llama",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Llama",
+        "v1.0": "$0.07144"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > Multimodal Llama",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Multimodal Llama",
+        "v1.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Multimodal Llama",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Multimodal Llama",
+        "v1.0": "$0.05718"
+    },
+    {
+        "Custom Model Unit version": "Monthly storage cost per Custom Model Unit",
+        "Hierarchy_Path": "Custom Model Import > Mixtral",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Mixtral",
+        "v1.0": "$1.95"
+    },
+    {
+        "Custom Model Unit version": "Price per Custom Model Unit per min*",
+        "Hierarchy_Path": "Custom Model Import > Mistral",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Custom Model Import",
+        "Region": "global",
+        "Sub_Tab_1": "Mistral",
+        "v1.0": "$0.07144"
+    },
+    {
+        "DeepSeek models": "DeepSeek v3.2",
+        "Hierarchy_Path": "DeepSeek > Standard",
+        "Prce per 1M input tokens": "$ 0.6386",
+        "Price per 1M output tokens": "$ 1.9055",
+        "Pricing_Category": "General Pricing",
+        "Provider": "DeepSeek",
+        "Region": "global",
+        "Sub_Tab_1": "Standard"
+    },
+    {
+        "DeepSeek models": "DeepSeek v3.1",
+        "Hierarchy_Path": "DeepSeek > Standard",
+        "Prce per 1M input tokens": "$ 0.5974",
+        "Price per 1M output tokens": "$ 1.7304",
+        "Pricing_Category": "General Pricing",
+        "Provider": "DeepSeek",
+        "Region": "global",
+        "Sub_Tab_1": "Standard"
+    },
+    {
+        "DeepSeek models": "DeepSeek v3.1",
+        "Hierarchy_Path": "DeepSeek > Priority",
+        "Price per 1M input tokens": "$ 1.0455",
+        "Price per 1M output tokens": "$ 3.0282",
+        "Pricing_Category": "General Pricing",
+        "Provider": "DeepSeek",
+        "Region": "global",
+        "Sub_Tab_1": "Priority"
+    },
+    {
+        "DeepSeek models": "DeepSeek v3.2",
+        "Hierarchy_Path": "DeepSeek > Standard",
+        "Price per 1M input tokens": "$ 0.74",
+        "Price per 1M output tokens": "$ 2.22",
+        "Pricing_Category": "General Pricing",
+        "Provider": "DeepSeek",
+        "Region": "global",
+        "Sub_Tab_1": "Standard"
+    },
+    {
+        "DeepSeek models": "DeepSeek v3.2",
+        "Hierarchy_Path": "DeepSeek > Standard",
+        "Price per 1M input tokens": "$ 0.62",
+        "Price per 1M output tokens": "$ 1.85",
+        "Pricing_Category": "General Pricing",
+        "Provider": "DeepSeek",
+        "Region": "global",
+        "Sub_Tab_1": "Standard"
+    },
+    {
+        "DeepSeek models": "DeepSeek v3.1",
+        "Hierarchy_Path": "DeepSeek > Flex",
+        "Price per 1M input tokens": "$ 0.2987",
+        "Price per 1M output tokens": "$ 0.8652",
+        "Pricing_Category": "General Pricing",
+        "Provider": "DeepSeek",
+        "Region": "global",
+        "Sub_Tab_1": "Flex"
+    },
+    {
+        "Google models": "Gemma 3 27B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.28",
+        "Price per 1M output tokens": "$ 0.46",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 12B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.09",
+        "Price per 1M output tokens": "$ 0.29",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 27B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.36",
+        "Price per 1M output tokens": "$ 0.59",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 4B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.05",
+        "Price per 1M output tokens": "$ 0.09",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 4B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.05",
+        "Price per 1M output tokens": "$ 0.10",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 12B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.14",
+        "Price per 1M output tokens": "$ 0.45",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 12B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.11",
+        "Price per 1M output tokens": "$ 0.35",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 12B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.11",
+        "Price per 1M output tokens": "$ 0.34",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 27B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.23",
+        "Price per 1M output tokens": "$ 0.38",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 4B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.04",
+        "Price per 1M output tokens": "$ 0.08",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 27B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.27",
+        "Price per 1M output tokens": "$ 0.45",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 27B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.2369",
+        "Price per 1M output tokens": "$ 0.3914",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 12B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.0927",
+        "Price per 1M output tokens": "$ 0.2987",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 4B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.0412",
+        "Price per 1M output tokens": "$ 0.0824",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Google models": "Gemma 3 4B",
+        "Hierarchy_Path": "Google",
+        "Price per 1M input tokens": "$ 0.06",
+        "Price per 1M output tokens": "$ 0.12",
+        "Pricing_Category": "Google",
+        "Provider": "Google",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Meta",
+        "Meta models": "Llama 2 Pretrained and Chat (13B)",
+        "Price per hour per model unit for 1-month commitment": "$21.18",
+        "Price per hour per model unit for 6-month commitment": "$13.08",
+        "Pricing_Category": "Meta",
+        "Provider": "Meta",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Meta",
+        "Meta models": "Llama 2 Pretrained (13B)",
+        "Price to infer from a custom model for 1 model unit per hour (with no-commit Provisioned Throughput pricing)": "$23.50",
+        "Price to store each custom model* per month": "$1.95",
+        "Price to train 1M tokens": "$1.49",
+        "Pricing_Category": "Meta",
+        "Provider": "Meta",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Meta",
+        "Meta models": "Llama 2 Pretrained (70B)",
+        "Price per hour per model unit for 1-month commitment": "$21.18",
+        "Price per hour per model unit for 6-month commitment": "$13.08",
+        "Pricing_Category": "Meta",
+        "Provider": "Meta",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Meta",
+        "Meta models": "Llama 2 Chat (13B)",
+        "Price per 1M input tokens": "$0.75",
+        "Price per 1M output tokens": "$1.00",
+        "Pricing_Category": "Meta",
+        "Provider": "Meta",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Meta",
+        "Meta models": "Llama 2 Chat (70B)",
+        "Price per 1M input tokens": "$1.95",
+        "Price per 1M output tokens": "$2.56",
+        "Pricing_Category": "Meta",
+        "Provider": "Meta",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Meta",
+        "Meta models": "Llama 2 Pretrained (70B)",
+        "Price to infer from a custom model for 1 model unit per hour (with no-commit Provisioned Throughput pricing)": "$23.50",
+        "Price to store each custom model* per month": "$1.95",
+        "Price to train 1M tokens": "$7.99",
+        "Pricing_Category": "Meta",
+        "Provider": "Meta",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2",
+        "Price per 1M input tokens": "$ 0.35",
+        "Price per 1M output tokens": "$ 1.41",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.1",
+        "Price per 1M input tokens": "$ 0.3090",
+        "Price per 1M output tokens": "$ 1.2360",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.5",
+        "Price per 1M input tokens": "$ 0.31",
+        "Price per 1M output tokens": "$ 1.24",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.1",
+        "Price per 1M input tokens": "$ 0.36",
+        "Price per 1M output tokens": "$ 1.44",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "MiniMax M2.5",
+        "Price per 1M input tokens": "$ 0.30",
+        "Price per 1M output tokens": "$ 1.20",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2",
+        "Price per 1M input tokens": "$ 0.47",
+        "Price per 1M output tokens": "$ 1.86",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.5",
+        "Price per 1M input tokens": "$ 0.47",
+        "Price per 1M output tokens": "$ 1.86",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2",
+        "Price per 1M input tokens": "$ 0.30",
+        "Price per 1M output tokens": "$ 1.20",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.1",
+        "Price per 1M input tokens": "$ 0.47",
+        "Price per 1M output tokens": "$ 1.86",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2",
+        "Price per 1M input tokens": "$ 0.3090",
+        "Price per 1M output tokens": "$ 1.2360",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.1",
+        "Price per 1M input tokens": "$ 0.30",
+        "Price per 1M output tokens": "$ 1.20",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2",
+        "Price per 1M input tokens": "$ 0.36",
+        "Price per 1M output tokens": "$ 1.45",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "MiniMax AI",
+        "Minimax models": "Minimax M2.5",
+        "Price per 1M input tokens": "$ 0.36",
+        "Price per 1M output tokens": "$ 1.44",
+        "Pricing_Category": "MiniMax AI",
+        "Provider": "MiniMax AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 3B 3.0",
+        "Price per 1M input tokens": "$ 0.10",
+        "Price per 1M output tokens": "$ 0.10",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Magistral Small 1.2",
+        "Price per 1M input tokens": "$ 0.78",
+        "Price per 1M output tokens": "$ 2.33",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Mini 1.0",
+        "Price per 1M input tokens": "$ 0.04",
+        "Price per 1M output tokens": "$ 0.04",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Small 1.0",
+        "Price per 1M input tokens": "$ 0.16",
+        "Price per 1M output tokens": "$ 0.47",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 8B 3.0",
+        "Price per 1M input tokens": "$ 0.23",
+        "Price per 1M output tokens": "$ 0.23",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 14B 3.0",
+        "Price per 1M input tokens": "$ 0.31",
+        "Price per 1M output tokens": "$ 0.31",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Mistral Large 3",
+        "Price per 1M input tokens": "$ 0.5150",
+        "Price per 1M output tokens": "$ 1.5450",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Mini 1.0",
+        "Price per 1M input tokens": "$ 0.05",
+        "Price per 1M output tokens": "$ 0.05",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Mini 1.0",
+        "Price per 1M input tokens": "$ 0.0412",
+        "Price per 1M output tokens": "$ 0.0412",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Mistral Large 3",
+        "Price per 1M input tokens": "$ 0.50",
+        "Price per 1M output tokens": "$ 1.50",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Mistral Large 3",
+        "Price per 1M input tokens": "$ 0.59",
+        "Price per 1M output tokens": "$ 1.76",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Devstral 2 135B",
+        "Price per 1M input tokens": "$ 0.40",
+        "Price per 1M output tokens": "$ 2.00",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Devstral 2 135B",
+        "Price per 1M input tokens": "$ 0.41",
+        "Price per 1M output tokens": "$ 2.06",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Small 1.0",
+        "Price per 1M input tokens": "$ 0.12",
+        "Price per 1M output tokens": "$ 0.36",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 14B 3.0",
+        "Price per 1M input tokens": "$ 0.2060",
+        "Price per 1M output tokens": "$ 0.2060",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Mistral Large 3",
+        "Price per 1M input tokens": "$ 0.61",
+        "Price per 1M output tokens": "$ 1.82",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 8B 3.0",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 0.18",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 3B 3.0",
+        "Price per 1M input tokens": "$ 0.1030",
+        "Price per 1M output tokens": "$ 0.1030",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Devstral 2 135B",
+        "Price per 1M input tokens": "$ 0.48",
+        "Price per 1M output tokens": "$ 2.40",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Magistral Small 1.2",
+        "Price per 1M input tokens": "$ 0.59",
+        "Price per 1M output tokens": "$ 1.76",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 3B 3.0",
+        "Price per 1M input tokens": "$ 0.12",
+        "Price per 1M output tokens": "$ 0.12",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 8B 3.0",
+        "Price per 1M input tokens": "$ 0.15",
+        "Price per 1M output tokens": "$ 0.15",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Small 1.0",
+        "Price per 1M input tokens": "$ 0.12",
+        "Price per 1M output tokens": "$ 0.35",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 8B 3.0",
+        "Price per 1M input tokens": "$ 0.1545",
+        "Price per 1M output tokens": "$ 0.1545",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Mini 1.0",
+        "Price per 1M input tokens": "$ 0.06",
+        "Price per 1M output tokens": "$ 0.06",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 14B 3.0",
+        "Price per 1M input tokens": "$ 0.20",
+        "Price per 1M output tokens": "$ 0.20",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Small 1.0",
+        "Price per 1M input tokens": "$ 0.10",
+        "Price per 1M output tokens": "$ 0.30",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Magistral Small 1.2",
+        "Price per 1M input tokens": "$ 0.50",
+        "Price per 1M output tokens": "$ 1.50",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 3B 3.0",
+        "Price per 1M input tokens": "$ 0.16",
+        "Price per 1M output tokens": "$ 0.16",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Magistral Small 1.2",
+        "Price per 1M input tokens": "$ 0.61",
+        "Price per 1M output tokens": "$ 1.82",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Devstral 2 135B",
+        "Price per 1M input tokens": "$ 0.62",
+        "Price per 1M output tokens": "$ 3.10",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Voxtral Small 1.0",
+        "Price per 1M input tokens": "$ 0.1030",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Magistral Small 1.2",
+        "Price per 1M input tokens": "$ 0.5150",
+        "Price per 1M output tokens": "$ 1.5450",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Mistral AI",
+        "Mistral models": "Ministral 14B 3.0",
+        "Price per 1M input tokens": "$ 0.24",
+        "Price per 1M output tokens": "$ 0.24",
+        "Pricing_Category": "Mistral AI",
+        "Provider": "Mistral AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2.5",
+        "Price per 1M input tokens": "$ 0.6180",
+        "Price per 1M output tokens": "$ 3.0900",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2 Thinking",
+        "Price per 1M input tokens": "$ 0.73",
+        "Price per 1M output tokens": "$ 3.03",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2.5",
+        "Price per 1M input tokens": "$ 0.72",
+        "Price per 1M output tokens": "$ 3.60",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2 Thinking",
+        "Price per 1M input tokens": "$ 0.60",
+        "Price per 1M output tokens": "$ 2.50",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2.5",
+        "Price per 1M input tokens": "$ 0.60",
+        "Price per 1M output tokens": "$ 3.00",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2 Thinking",
+        "Price per 1M input tokens": "$ 0.6180",
+        "Price per 1M output tokens": "$ 2.5750",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "Moonshot AI",
+        "Kimi models": "Kimi K2 Thinking",
+        "Price per 1M input tokens": "$ 0.71",
+        "Price per 1M output tokens": "$ 2.94",
+        "Pricing_Category": "Moonshot AI",
+        "Provider": "Moonshot AI",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2 VL",
+        "Price per 1M input tokens": "$ 0.20",
+        "Price per 1M output tokens": "$ 0.60",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Super 120B A12B",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 0.78",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2 VL",
+        "Price per 1M input tokens": "$ 0.24",
+        "Price per 1M output tokens": "$ 0.71",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2",
+        "Price per 1M input tokens": "$ 0.07",
+        "Price per 1M output tokens": "$ 0.27",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Nano 30B A3B",
+        "Price per 1M input tokens": "$ 0.07",
+        "Price per 1M output tokens": "$ 0.28",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Nano 30B A3B",
+        "Price per 1M input tokens": "$ 0.09",
+        "Price per 1M output tokens": "$ 0.37",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Nano 30B A3B",
+        "Price per 1M input tokens": "$ 0.0618",
+        "Price per 1M output tokens": "$ 0.2472",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Nano 30B A3B",
+        "Price per 1M input tokens": "$ 0.06",
+        "Price per 1M output tokens": "$ 0.24",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Nano 30B A3B",
+        "Price per 1M input tokens": "$ 0.07",
+        "Price per 1M output tokens": "$ 0.29",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Super 120B A12B",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 0.78",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2 VL",
+        "Price per 1M input tokens": "$ 0.2060",
+        "Price per 1M output tokens": "$ 0.6180",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2 VL",
+        "Price per 1M input tokens": "$ 0.24",
+        "Price per 1M output tokens": "$ 0.73",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2",
+        "Price per 1M input tokens": "$ 0.07",
+        "Price per 1M output tokens": "$ 0.28",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Super 120B A12B",
+        "Price per 1M input tokens": "$ 0.23",
+        "Price per 1M output tokens": "$ 1.01",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2",
+        "Price per 1M input tokens": "$ 0.09",
+        "Price per 1M output tokens": "$ 0.36",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Super 120B A12B",
+        "Price per 1M input tokens": "$ 0.15",
+        "Price per 1M output tokens": "$ 0.65",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2",
+        "Price per 1M input tokens": "$ 0.0618",
+        "Price per 1M output tokens": "$ 0.2369",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron 3 Super 120B A12B",
+        "Price per 1M input tokens": "$ 0.15",
+        "Price per 1M output tokens": "$ 0.67",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2 VL",
+        "Price per 1M input tokens": "$ 0.31",
+        "Price per 1M output tokens": "$ 0.93",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "NVIDIA",
+        "NVIDIA models": "NVIDIA Nemotron Nano 2",
+        "Price per 1M input tokens": "$ 0.06",
+        "Price per 1M output tokens": "$ 0.23",
+        "Pricing_Category": "NVIDIA",
+        "Provider": "NVIDIA",
+        "Region": "global"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 20B",
+        "Price per 1M input tokens": "$ 0.07",
+        "Price per 1M output tokens": "$ 0.20",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 20B",
+        "Price per 1M input tokens": "$ 0.08",
+        "Price per 1M output tokens": "$ 0.23",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Batch",
+        "OpenAI models": "gpt-oss-120b",
+        "Prce per 1M input tokens": "$ 0.0773",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Batch"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Flex",
+        "OpenAI models": "gpt-oss-20b",
+        "Prce per 1M input tokens": "$ 0.0361",
+        "Price per 1M output tokens": "$ 0.1545",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Flex"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 120B",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 0.70",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Priority",
+        "OpenAI models": "gpt-oss-120b",
+        "Prce per 1M input tokens": "$ 0.2704",
+        "Price per 1M output tokens": "$ 1.0815",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Priority"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 120B",
+        "Price per 1M input tokens": "$ 0.23",
+        "Price per 1M output tokens": "$ 0.93",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Priority",
+        "OpenAI models": "gpt-oss-20b",
+        "Prce per 1M input tokens": "$ 0.1262",
+        "Price per 1M output tokens": "$ 0.5408",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Priority"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 20B",
+        "Price per 1M input tokens": "$ 0.08",
+        "Price per 1M output tokens": "$ 0.24",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Model Customization",
+        "OpenAI models": "gpt-oss-20b",
+        "Price per 1M input tokens": "$ 0.09",
+        "Price per 1M output tokens": "$ 0.39",
+        "Price per training hours": "$ 80.00",
+        "Price to store each trained model per month": "$ 1.95",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Model Customization"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 120B",
+        "Price per 1M input tokens": "$ 0.15",
+        "Price per 1M output tokens": "$ 0.60",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 120B",
+        "Price per 1M input tokens": "$ 0.1545",
+        "Price per 1M output tokens": "$ 0.6180",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 20B",
+        "Price per 1M input tokens": "$ 0.0721",
+        "Price per 1M output tokens": "$ 0.2060",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Standard",
+        "OpenAI models": "gpt-oss-120b",
+        "Prce per 1M input tokens": "$ 0.1545",
+        "Price per 1M output tokens": "$ 0.6180",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Standard"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 20B",
+        "Price per 1M input tokens": "$ 0.11",
+        "Price per 1M output tokens": "$ 0.31",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Standard",
+        "OpenAI models": "gpt-oss-20b",
+        "Prce per 1M input tokens": "$ 0.0721",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Standard"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-safeguard 20b, 120b",
+        "OpenAI models": "GPT OSS Safeguard 120B",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 0.71",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-safeguard 20b, 120b"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Flex",
+        "OpenAI models": "gpt-oss-120b",
+        "Prce per 1M input tokens": "$ 0.0773",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Flex"
+    },
+    {
+        "Hierarchy_Path": "OpenAI > gpt-oss-20b, 120b > Batch",
+        "OpenAI models": "gpt-oss-20b",
+        "Prce per 1M input tokens": "$ 0.0361",
+        "Price per 1M output tokens": "$ 0.1545",
+        "Pricing_Category": "General Pricing",
+        "Provider": "OpenAI",
+        "Region": "global",
+        "Sub_Tab_1": "gpt-oss-20b, 120b",
+        "Sub_Tab_2": "Batch"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.64",
+        "Price per 1M output tokens": "$ 3.22",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 VL 235B A22B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Priority",
+        "Price per 1M input tokens": "$ 0.2704",
+        "Price per 1M output tokens": "$ 1.0815",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 32B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Priority"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Standard",
+        "Price per 1M input tokens": "$ 0.1545",
+        "Price per 1M output tokens": "$ 0.6180",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder 30B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Standard"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Flex",
+        "Price per 1M input tokens": "$ 0.0773",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder 30B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Flex"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.50",
+        "Price per 1M output tokens": "$ 1.20",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder Next",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.62",
+        "Price per 1M output tokens": "$ 3.13",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 VL 235B A22B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 1.45",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Next 80B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.82",
+        "Price per 1M output tokens": "$ 4.12",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 VL 235B A22B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Standard",
+        "Price per 1M input tokens": "$ 0.1545",
+        "Price per 1M output tokens": "$ 0.6180",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 32B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Standard"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.5150",
+        "Price per 1M output tokens": "$ 1.2360",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder Next",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Batch",
+        "Price per 1M input tokens": "$ 0.0773",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder 30B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Batch"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.53",
+        "Price per 1M output tokens": "$ 2.66",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 VL 235B A22B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.23",
+        "Price per 1M output tokens": "$ 1.86",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Next 80B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Batch",
+        "Price per 1M input tokens": "$ 0.0773",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 32B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Batch"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.1545",
+        "Price per 1M output tokens": "$ 1.2360",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Next 80B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Batch",
+        "Price per 1M input tokens": "$ 0.1133",
+        "Price per 1M output tokens": "$ 0.4532",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 235B A22B 2507",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Batch"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.15",
+        "Price per 1M output tokens": "$ 1.20",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Next 80B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.78",
+        "Price per 1M output tokens": "$ 1.86",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder Next",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Flex",
+        "Price per 1M input tokens": "$ 0.1133",
+        "Price per 1M output tokens": "$ 0.4532",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 235B A22B 2507",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Flex"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.5459",
+        "Price per 1M output tokens": "$ 2.7398",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 VL 235B A22B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Model Customization",
+        "Price per 1M input tokens": "$ 0.20",
+        "Price per 1M output tokens": "$ 0.78",
+        "Price per training hours": "$ 80.00",
+        "Price to store each trained model per month": "$ 1.95",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 32B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Model Customization"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.60",
+        "Price per 1M output tokens": "$ 1.44",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder Next",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen 3 Next, VL, Coder Next",
+        "Price per 1M input tokens": "$ 0.18",
+        "Price per 1M output tokens": "$ 1.41",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Next 80B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen 3 Next, VL, Coder Next"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Priority",
+        "Price per 1M input tokens": "$ 0.3966",
+        "Price per 1M output tokens": "$ 1.5862",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 235B A22B 2507",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Priority"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Standard",
+        "Price per 1M input tokens": "$ 0.2266",
+        "Price per 1M output tokens": "$ 0.9064",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 235B A22B 2507",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Standard"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Flex",
+        "Price per 1M input tokens": "$ 0.0773",
+        "Price per 1M output tokens": "$ 0.3090",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 32B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Flex"
+    },
+    {
+        "Hierarchy_Path": "Qwen > Qwen3 Coder, 32B, 235B > Priority",
+        "Price per 1M input tokens": "$ 0.2704",
+        "Price per 1M output tokens": "$ 1.0815",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Qwen",
+        "Qwen models": "Qwen3 Coder 30B A3B",
+        "Region": "global",
+        "Sub_Tab_1": "Qwen3 Coder, 32B, 235B",
+        "Sub_Tab_2": "Priority"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.40",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Conservative Upscale"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.06",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Outpaint"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Control Structure"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Search and Replace"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Remove Background"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Style Guide"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.03",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Fast Upscale"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Search and Recolor"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.60",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Creative upscale"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.08",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Style Transfer"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Control Sketch"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Inpaint"
+    },
+    {
+        "Column_2": "",
+        "Hierarchy_Path": "Stability AI",
+        "Price per generation for each model": "$0.07",
+        "Pricing_Category": "Stability AI",
+        "Provider": "Stability AI",
+        "Region": "global",
+        "Stability AI Image Services": "Stable Image Erase Object"
+    },
+    {
+        "Hierarchy_Path": "Writer",
+        "Price per 1M input tokens": "$2.50",
+        "Price per 1M output tokens": "$10.00",
+        "Pricing_Category": "Writer",
+        "Provider": "Writer",
+        "Region": "global",
+        "Writer models": "Palmyra X4"
+    },
+    {
+        "Hierarchy_Path": "Writer",
+        "Price per 1M input tokens": "$0.60",
+        "Price per 1M output tokens": "$6.00",
+        "Pricing_Category": "Writer",
+        "Provider": "Writer",
+        "Region": "global",
+        "Writer models": "Palmyra X5"
+    },
+    {
+        "Hierarchy_Path": "Writer",
+        "Price per 1M input tokens": "$0.15",
+        "Price per 1M output tokens": "$0.60",
+        "Pricing_Category": "Writer",
+        "Provider": "Writer",
+        "Region": "global",
+        "Writer models": "Palmyra Vision 7B"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 5",
+        "Price per 1M input tokens": "$ 1.00",
+        "Price per 1M output tokens": "$ 3.20",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 5",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7",
+        "Price per 1M input tokens": "$ 0.6180",
+        "Price per 1M output tokens": "$ 2.2660",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7",
+        "Z AI models": "GLM 4.7"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 1.20",
+        "Price per 1M output tokens": "$ 3.84",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 1.00",
+        "Price per 1M output tokens": "$ 3.20",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 5",
+        "Price per 1M input tokens": "$ 1.55",
+        "Price per 1M output tokens": "$ 4.96",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 5",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7",
+        "Price per 1M input tokens": "$ 0.60",
+        "Price per 1M output tokens": "$ 2.20",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7",
+        "Z AI models": "GLM 4.7"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 0.11",
+        "Price per 1M output tokens": "$ 0.62",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 4.7 Flash"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 5",
+        "Price per 1M input tokens": "$ 1.03",
+        "Price per 1M output tokens": "$ 3.30",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 5",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7",
+        "Price per 1M input tokens": "$ 0.72",
+        "Price per 1M output tokens": "$ 2.64",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7",
+        "Z AI models": "GLM 4.7"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 0.0721",
+        "Price per 1M output tokens": "$ 0.4120",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 4.7 Flash"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 0.07",
+        "Price per 1M output tokens": "$ 0.40",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 4.7 Flash"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 0.08",
+        "Price per 1M output tokens": "$ 0.48",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 4.7 Flash"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 1.03",
+        "Price per 1M output tokens": "$ 3.30",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 5",
+        "Price per 1M input tokens": "$ 1.20",
+        "Price per 1M output tokens": "$ 3.84",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 5",
+        "Z AI models": "GLM 5"
+    },
+    {
+        "Hierarchy_Path": "Z AI > GLM 4.7 Flash",
+        "Price per 1M input tokens": "$ 1.55",
+        "Price per 1M output tokens": "$ 4.96",
+        "Pricing_Category": "General Pricing",
+        "Provider": "Z AI",
+        "Region": "global",
+        "Sub_Tab_1": "GLM 4.7 Flash",
+        "Z AI models": "GLM 5"
+    }
+]
