@@ -1,0 +1,57 @@
+name: Refresh Bedrock pricing
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright beautifulsoup4
+          python -m playwright install --with-deps chromium
+
+      - name: Scrape pricing page
+        run: python aws-bedrock-pricing.py
+
+      - name: Convert JSON to CSV
+        run: python json_to_csv.py
+
+      - name: Open PR with refreshed data
+        uses: peter-evans/create-pull-request@v7
+        with:
+          add-paths: |
+            bedrock_n_level_pricing.json
+            bedrock_pricing.csv
+          branch: bot/refresh-pricing
+          base: main
+          delete-branch: true
+          commit-message: "chore: refresh Bedrock pricing data"
+          title: "chore: refresh Bedrock pricing data"
+          body: |
+            Automated weekly refresh of AWS Bedrock pricing data.
+
+            - Re-ran `aws-bedrock-pricing.py` against https://aws.amazon.com/bedrock/pricing/
+            - Regenerated `bedrock_pricing.csv` via `json_to_csv.py`
+
+            Review the diff to confirm AWS-side pricing changes before merging.
+          labels: |
+            automated
+            pricing-data

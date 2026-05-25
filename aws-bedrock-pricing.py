@@ -1,119 +1,59 @@
-import argparse
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import json
 import re
 
-# Map standard AWS region codes to the exact text used in the UI
-REGION_MAPPING = {
-    "us-east-1": "US East (N. Virginia)",
-    "us-east-2": "US East (Ohio)",
-    "us-west-2": "US West (Oregon)",
-    "ca-central-1": "Canada (Central)",
-    "eu-west-1": "Europe (Ireland)",
-    "eu-west-2": "Europe (London)",
-    "eu-west-3": "Europe (Paris)",
-    "eu-central-1": "Europe (Frankfurt)",
-    "ap-northeast-1": "Asia Pacific (Tokyo)",
-    "ap-northeast-2": "Asia Pacific (Seoul)",
-    "ap-southeast-1": "Asia Pacific (Singapore)",
-    "ap-southeast-2": "Asia Pacific (Sydney)",
-    "ap-south-1": "Asia Pacific (Mumbai)",
-    "sa-east-1": "South America (São Paulo)"
-}
+def scroll_to_load_all(page):
+    """
+    AWS lazy-loads pricing tables as the user scrolls. Walk the page top-to-bottom
+    in viewport-sized steps so every table mounts before we read the DOM.
+    """
+    for _ in range(12):
+        page.evaluate("window.scrollBy(0, 800)")
+        page.wait_for_timeout(400)
+    page.evaluate("window.scrollTo(0, 0)")
+    page.wait_for_timeout(800)
 
-def set_target_region_and_filter(page, ui_target_region, level):
-    page.wait_for_timeout(1000)
-    
-    region_regex = re.compile(r"US East|US West|Europe|Asia Pacific|Canada|South America", re.IGNORECASE)
-    dropdowns =[]
-    dropdowns.extend(page.locator('select').all())
-    
-    for el in page.locator('button, [role="combobox"], [role="button"]').all():
-        try:
-            if el.is_visible() and region_regex.search(el.inner_text()):
-                if el not in dropdowns:
-                    dropdowns.append(el)
-        except: pass
-
-    if not dropdowns:
-        return False
-
-    for d in dropdowns:
-        try:
-            if not d.is_visible(): continue
-            
-            is_select = d.evaluate('el => el.tagName.toLowerCase() === "select"')
-            supported = False
-            
-            if is_select:
-                options_text = d.evaluate('el => Array.from(el.options).map(o => o.innerText).join(" ")')
-                if ui_target_region.lower() in options_text.lower():
-                    d.select_option(label=ui_target_region)
-                    supported = True
-            else:
-                current_text = d.inner_text().split('\n')[0].strip()
-                if ui_target_region.lower() == current_text.lower():
-                    supported = True
-                else:
-                    d.click()
-                    page.wait_for_timeout(500)
-                    option = page.locator('[role="option"]').filter(has_text=re.compile(f"^{re.escape(ui_target_region)}", re.IGNORECASE)).first
-                    if option.is_visible():
-                        option.click()
-                        supported = True
-                    else:
-                        page.keyboard.press("Escape")
-                        supported = False
-                    page.wait_for_timeout(500)
-            
-            if not supported:
-                print(f"{'  ' * level}⚠️ Model not supported in '{ui_target_region}'. Hiding table.")
-                d.evaluate('''el => {
-                    let parent = el;
-                    for(let i=0; i<5; i++) {
-                        if(parent.parentElement) parent = parent.parentElement;
-                    }
-                    parent.style.display = "none";
-                }''')
-        except Exception as e:
-            pass
-            
-    page.wait_for_timeout(1500)
-    return True
-
-def extract_tables(page, current_path, region_code):
+def extract_tables(page, current_path):
+    """
+    Extracts all visible tables on the screen right now.
+    Appends the dynamic navigation path (e.g., Anthropic > Text Models) to the data.
+    """
+    scroll_to_load_all(page)
     tables_data = page.evaluate('''() => {
         const tables = Array.from(document.querySelectorAll('table'));
+        // Only get tables physically painted on the screen right now
         const visibleTables = tables.filter(t => t.offsetWidth > 0 && t.offsetHeight > 0);
-        
+
         return visibleTables.map(table => {
             let heading = "General Pricing";
-            let currentElement = table;
-            for (let level = 0; level < 4; level++) {
-                if (!currentElement) break;
-                let prev = currentElement.previousElementSibling;
-                while (prev) {
-                    if (['H1', 'H2', 'H3', 'H4', 'H5', 'H6'].includes(prev.tagName)) {
-                        heading = prev.innerText.trim(); break;
+
+            // Scope the heading search to the active tabpanel containing this table.
+            // This avoids the responsive-layout DOM reordering that breaks a naive
+            // previousElementSibling walk (e.g. Mistral / Anthropic sub-sections).
+            const panel = table.closest('[role="tabpanel"]') || document.body;
+
+            // Walk headings and tables in document order within the panel and pick
+            // the most recent non-empty heading that appears before this table.
+            const elements = Array.from(panel.querySelectorAll('h1, h2, h3, h4, h5, h6, table'));
+            const tableIndex = elements.indexOf(table);
+            for (let i = tableIndex - 1; i >= 0; i--) {
+                const el = elements[i];
+                if (/^H[1-6]$/.test(el.tagName)) {
+                    const text = (el.innerText || '').trim();
+                    if (text) {
+                        heading = text;
+                        break;
                     }
-                    const innerHeading = prev.querySelector && prev.querySelector('h1, h2, h3, h4, h5, h6');
-                    if (innerHeading) { heading = innerHeading.innerText.trim(); break; }
-                    prev = prev.previousElementSibling;
                 }
-                if (heading !== "General Pricing") break;
-                currentElement = currentElement.parentElement;
             }
+
             return { heading: heading, html: table.outerHTML };
         });
     }''')
 
     extracted =[]
     for item in tables_data:
-        # 🚨 FILTER 1: Exclude if the heading explicitly mentions 'example'
-        if "example" in item['heading'].lower():
-            continue
-
         soup = BeautifulSoup(item['html'], "html.parser")
         table = soup.find("table")
         if not table: continue
@@ -125,121 +65,130 @@ def extract_tables(page, current_path, region_code):
         headers =[th.get_text(separator=" ", strip=True) for th in header_row.find_all(["th", "td"])]
         headers =[h if h else f"Column_{i}" for i, h in enumerate(headers)]
         
-        # 🚨 FILTER 2: Exclude if table columns are for examples (e.g., Total Cost)
-        headers_lower = [h.lower() for h in headers]
-        if any("example" in h or "total cost" in h or "monthly cost" in h for h in headers_lower):
-            continue
-            
-        # 🚨 FILTER 3: Exclude if the table body contains "Scenario" text
-        is_example_body = False
-        for row in table.find_all("tr"):
-            text = row.get_text(separator=" ", strip=True).lower()
-            if "scenario" in text or "pricing example" in text:
-                is_example_body = True
-                break
-                
-        if is_example_body:
-            continue
-
-        # Standard Data Extraction
         for row in table.find_all("tr"):
             if row == header_row: continue
+            
             cells = row.find_all(["td", "th"])
-            cell_texts =[c.get_text(separator=" ", strip=True) for c in cells]
+            cell_texts = [c.get_text(separator=" ", strip=True) for c in cells]
             
             if len(cell_texts) == len(headers) and len(headers) > 0:
                 if any(t != "" for t in cell_texts):
+                    # Construct our dynamic dictionary based on the recursion depth
                     entry = {
                         "Hierarchy_Path": " > ".join(current_path),
                         "Provider": current_path[0] if len(current_path) > 0 else "Unknown",
-                        "Pricing_Category": item['heading'],
-                        "Region": region_code 
+                        "Pricing_Category": item['heading']
                     }
+                    
+                    # Dynamically add Sub_Tab_1, Sub_Tab_2, etc., based on how deep we went!
                     for depth in range(1, len(current_path)):
                         entry[f"Sub_Tab_{depth}"] = current_path[depth]
                         
                     entry.update(dict(zip(headers, cell_texts)))
                     extracted.append(entry)
+                    
     return extracted
 
 def get_nested_tablists(page):
-    visible =[t for t in page.locator('[role="tablist"]').all() if t.is_visible()]
-    return[t for t in visible if t.get_by_role("tab", name=re.compile(r"^model pricing$", re.IGNORECASE)).count() == 0]
+    """
+    Returns a list of all currently VISIBLE tab groups, 
+    EXCLUDING the root page navigation (Knowledge Bases, Model Pricing, etc.)
+    """
+    visible_tablists =[t for t in page.locator('[role="tablist"]').all() if t.is_visible()]
+    nested =[]
+    for t in visible_tablists:
+        # If this tablist does NOT contain the main "Model pricing" tab, it's a provider/nested tablist
+        if t.get_by_role("tab", name=re.compile(r"^model pricing$", re.IGNORECASE)).count() == 0:
+            nested.append(t)
+    return nested
 
-def explore_tabs_recursively(page, level, current_path, all_pricing_data, ui_target_region, region_code):
+def explore_tabs_recursively(page, level, current_path, all_pricing_data):
+    """
+    DFS Recursive function that clicks every possible permutation of nested tabs.
+    """
+    # Wait briefly for UI state to settle before evaluating screen depth
     page.wait_for_timeout(1000) 
+    
     current_nested_tablists = get_nested_tablists(page)
     
+    # BASE CASE: No more nested tabs below our current level! We hit a leaf node.
     if level >= len(current_nested_tablists):
-        print(f"{'  ' * level}📍 Base Level:[{' > '.join(current_path)}]. Configuring Region...")
-        
-        has_regions = set_target_region_and_filter(page, ui_target_region, level)
-        assigned_region = region_code if has_regions else "global"
-        
-        all_pricing_data.extend(extract_tables(page, current_path, assigned_region))
+        print(f"{'  ' * level}🟢 Reached data tier: [{' > '.join(current_path)}]. Extracting tables...")
+        all_pricing_data.extend(extract_tables(page, current_path))
         return
 
+    # RECURSIVE CASE: We have a row of tabs at this level. We must click every single one.
     tablist_at_this_level = current_nested_tablists[level]
     num_tabs = tablist_at_this_level.get_by_role("tab").count()
     
     for i in range(num_tabs):
         try:
+            # Re-fetch the DOM state (clicking previous tabs might detach elements)
             refreshed_tablists = get_nested_tablists(page)
-            if level >= len(refreshed_tablists): break
+            if level >= len(refreshed_tablists): 
+                break
                 
             target_tab = refreshed_tablists[level].get_by_role("tab").nth(i)
+            
             if target_tab.is_visible():
                 tab_name = target_tab.inner_text().split('\n')[0].strip()
-                print(f"{'  ' * level}➡️ Traversing: {tab_name}...")
+                print(f"{'  ' * level}➡️ Clicking level {level + 1}: {tab_name}...")
                 
                 target_tab.click()
+                # Crucial wait time allowing React/Vue to fetch and render the inner tabs/tables
                 page.wait_for_timeout(1500) 
                 
-                explore_tabs_recursively(page, level + 1, current_path + [tab_name], all_pricing_data, ui_target_region, region_code)
+                # RECURSION: Go one level deeper!
+                explore_tabs_recursively(page, level + 1, current_path + [tab_name], all_pricing_data)
+                
         except Exception as e:
-            pass
+            print(f"{'  ' * level}⚠️ Failed at level {level}, tab {i}: {e}")
 
-def scrape_targeted_bedrock_pricing(region_code):
-    ui_target_region = REGION_MAPPING.get(region_code.lower())
-    
-    if not ui_target_region:
-        print(f"❌ Error: AWS Region code '{region_code}' is not recognized.")
-        return
-
+def scrape_dynamic_bedrock_pricing():
     url = "https://aws.amazon.com/bedrock/pricing/"
     all_pricing_data =[]
 
-    print(f"🚀 Launching Scraper for {region_code} (UI: {ui_target_region})")
+    print("Launching recursive N-Level deep browser...")
     with sync_playwright() as p:
-        # headless=True for production speed!
-        browser = p.chromium.launch(headless=True) 
-        page = browser.new_page()
+        browser = p.chromium.launch(headless=True) # Keep False to watch the algorithm work!
+        # AWS sniffs the User-Agent and serves a stripped-down pricing page to
+        # headless Chromium (the default UA contains "HeadlessChrome"). Force a
+        # real desktop Chrome UA so headless gets the same DOM as a real browser.
+        # Also pin a wide viewport to avoid responsive layout differences.
+        context = browser.new_context(
+            viewport={"width": 1920, "height": 1200},
+            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+        )
+        page = context.new_page()
         page.goto(url, wait_until="networkidle")
         page.wait_for_timeout(3000)
 
+        # 1. ENTER THE MAIN GATEWAY: Click the "Model Pricing" root tab
+        print("Locating main 'Model pricing' navigation...")
         main_tab = page.get_by_role("tab", name=re.compile(r"^model pricing$", re.IGNORECASE)).first
         if main_tab.is_visible():
             main_tab.click()
             page.wait_for_timeout(2000)
 
-        explore_tabs_recursively(page, level=0, current_path=[], all_pricing_data=all_pricing_data, ui_target_region=ui_target_region, region_code=region_code.lower())
+        # 2. TRIGGER THE RECURSION
+        print("\nInitiating Depth-First Search on nested tabs...\n")
+        explore_tabs_recursively(page, level=0, current_path=[], all_pricing_data=all_pricing_data)
 
         browser.close()
 
-    print("\n✅ Extraction complete! Deduplicating data...")
-    unique_data =[dict(t) for t in {tuple(sorted(d.items())) for d in all_pricing_data}]
-    unique_data = sorted(unique_data, key=lambda x: (x.get('Provider', ''), x.get('Pricing_Category', '')))
-
-    filename = f"bedrock_pricing_{region_code.lower()}.json"
+    print("\nRecursion complete! Cleaning and deduplicating massive dataset...")
     
-    with open(filename, "w", encoding="utf-8") as f:
+    # Hash and sort to perfectly deduplicate tables
+    unique_data =[dict(t) for t in {tuple(sorted(d.items())) for d in all_pricing_data}]
+    
+    # Sort beautifully by the generated Hierarchy path
+    unique_data = sorted(unique_data, key=lambda x: (x.get('Hierarchy_Path', ''), x.get('Pricing_Category', '')))
+
+    # 3. SAVE THE OUTPUT
+    with open("bedrock_n_level_pricing.json", "w", encoding="utf-8") as f:
         json.dump(unique_data, f, indent=4, ensure_ascii=False)
         
-    print(f"🎉 Success! Scraped {len(unique_data)} records. Saved to {filename}")
+    print(f"✅ Master Architecture Scraped! Saved {len(unique_data)} distinct pricing metrics across all dynamic depths.")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="AWS Bedrock Pricing Scraper API")
-    parser.add_argument("--region", type=str, default="us-west-2", help="AWS Region Code (e.g., us-east-1, eu-central-1)")
-    
-    args = parser.parse_args()
-    scrape_targeted_bedrock_pricing(args.region)
+    scrape_dynamic_bedrock_pricing()
