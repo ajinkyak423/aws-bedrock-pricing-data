@@ -130,9 +130,11 @@ def main():
             "pricing_category": category,
             "price_per_1m_input_tokens": in_price if in_price is not None else "",
             "price_per_1m_output_tokens": out_price if out_price is not None else "",
-            "price_per_1m_cache_read": cache_read_price if cache_read_price is not None else "",
-            "price_per_1m_cache_write_5m": cache_write_5m_price if cache_write_5m_price is not None else "",
-            "price_per_1m_cache_write_1h": cache_write_1h_price if cache_write_1h_price is not None else "",
+            # Cache columns default to 0 (not blank): models without caching cost $0
+            # for cache, and a numeric 0 avoids the OpenCSVSerde empty-string parse error.
+            "price_per_1m_cache_read": cache_read_price if cache_read_price is not None else 0,
+            "price_per_1m_cache_write_5m": cache_write_5m_price if cache_write_5m_price is not None else 0,
+            "price_per_1m_cache_write_1h": cache_write_1h_price if cache_write_1h_price is not None else 0,
         })
 
     rows.sort(key=lambda r: (r["model"], r["pricing_category"]))
