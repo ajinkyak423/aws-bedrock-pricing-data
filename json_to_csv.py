@@ -17,6 +17,10 @@ OUTPUT_CSV = "bedrock_pricing.csv"
 
 INPUT_PRICE_KEYS = ("Price per 1M input tokens", "Prce per 1M input tokens")  # second is a source-side typo
 OUTPUT_PRICE_KEYS = ("Price per 1M output tokens",)
+CACHE_READ_KEYS = ("Price per 1M input tokens (cache read)",)
+# 5m is the default cache write tier; fall back to generic "cache write" if 5m-specific isn't present
+CACHE_WRITE_5M_KEYS = ("Price per 1M input tokens (5m cache write)", "Price per 1M input tokens (cache write)")
+CACHE_WRITE_1H_KEYS = ("Price per 1M input tokens (1h cache write)",)
 
 PROVIDER_SLUG = {
     "Amazon": "amazon",
@@ -110,6 +114,9 @@ def main():
     for d in data:
         in_price = parse_price(next((d[k] for k in INPUT_PRICE_KEYS if d.get(k)), ""))
         out_price = parse_price(next((d[k] for k in OUTPUT_PRICE_KEYS if d.get(k)), ""))
+        cache_read_price = parse_price(next((d[k] for k in CACHE_READ_KEYS if d.get(k)), ""))
+        cache_write_5m_price = parse_price(next((d[k] for k in CACHE_WRITE_5M_KEYS if d.get(k)), ""))
+        cache_write_1h_price = parse_price(next((d[k] for k in CACHE_WRITE_1H_KEYS if d.get(k)), ""))
         # Keep the row if either price is present (e.g. embedding models have no output price)
         if in_price is None and out_price is None:
             continue
@@ -123,11 +130,22 @@ def main():
             "pricing_category": category,
             "price_per_1m_input_tokens": in_price if in_price is not None else "",
             "price_per_1m_output_tokens": out_price if out_price is not None else "",
+            "price_per_1m_cache_read": cache_read_price if cache_read_price is not None else "",
+            "price_per_1m_cache_write_5m": cache_write_5m_price if cache_write_5m_price is not None else "",
+            "price_per_1m_cache_write_1h": cache_write_1h_price if cache_write_1h_price is not None else "",
         })
 
     rows.sort(key=lambda r: (r["model"], r["pricing_category"]))
 
-    fieldnames = ["model", "pricing_category", "price_per_1m_input_tokens", "price_per_1m_output_tokens"]
+    fieldnames = [
+        "model",
+        "pricing_category",
+        "price_per_1m_input_tokens",
+        "price_per_1m_output_tokens",
+        "price_per_1m_cache_read",
+        "price_per_1m_cache_write_5m",
+        "price_per_1m_cache_write_1h",
+    ]
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
