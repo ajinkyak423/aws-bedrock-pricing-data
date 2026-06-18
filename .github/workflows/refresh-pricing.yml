@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   scrape:
@@ -34,24 +33,10 @@ jobs:
       - name: Convert JSON to CSV
         run: python json_to_csv.py
 
-      - name: Open PR with refreshed data
-        uses: peter-evans/create-pull-request@v7
-        with:
-          add-paths: |
-            bedrock_n_level_pricing.json
-            bedrock_pricing.csv
-          branch: main
-          base: main
-          delete-branch: true
-          commit-message: "chore: refresh Bedrock pricing data"
-          title: "chore: refresh Bedrock pricing data"
-          body: |
-            Automated weekly refresh of AWS Bedrock pricing data.
-
-            - Re-ran `aws-bedrock-pricing.py` against https://aws.amazon.com/bedrock/pricing/
-            - Regenerated `bedrock_pricing.csv` via `json_to_csv.py`
-
-            Review the diff to confirm AWS-side pricing changes before merging.
-          labels: |
-            automated
-            pricing-data
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bedrock_n_level_pricing.json bedrock_pricing.csv
+          git diff --cached --quiet || git commit -m "chore: refresh Bedrock pricing data"
+          git push
