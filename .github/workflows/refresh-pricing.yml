@@ -40,7 +40,7 @@ jobs:
           add-paths: |
             bedrock_n_level_pricing.json
             bedrock_pricing.csv
-          branch: bot/refresh-pricing
+          branch: main
           base: main
           delete-branch: true
           commit-message: "chore: refresh Bedrock pricing data"
